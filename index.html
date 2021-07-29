@@ -19,6 +19,27 @@
     </head>
 
     <body>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p> Do you want to confirm your Purchase?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- head start -->
 
         <head>
@@ -68,7 +89,13 @@
                                 Velit officia
                                 consequat
                                 duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                            <button class="btn btn-orange px-5">Purchase</button>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-orange px-5" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Purchase
+                            </button>
+
 
                         </div>
                         <div class="col-lg-6">
